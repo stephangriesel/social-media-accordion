@@ -163,6 +163,42 @@ header h1 {
     background-color:#000000;
 }
 
+@media (max-width: 850px) {
+    .container {
+        width:65%;
+    }
+
+    .tab {
+        display:block;
+        width:100%;
+        border-bottom: 4px #929292 solid;
+    }
+
+    .accordion {
+        display:block;
+        min-width:450px;
+        height:auto;
+    }
+
+    .tab .content {
+        width:85%;
+    }
+
+    .tab:hover {
+        width:100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        width:95%;
+    }
+
+    .accordion {
+        width:100%;
+        min-width: 350px;
+    }
+}
 
 
 
