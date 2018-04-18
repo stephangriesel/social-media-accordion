@@ -1,8 +1,171 @@
+* {
+    margin: 0;
+    padding:0;
+    border:0;
+}
+
 html, body {
     background: #929292;
-    color:#ffffff;
+    color:#000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 li {
     list-style: none;
 }
+
+@font-face {
+    font-family: 'Genericons';
+    src: url('fonts/genericons-regular-webfont.woff')format('woff'),
+    url('genericons-regular-webfont.eot')format('truetype')
+}
+
+.container {
+    margin: 50px auto;
+    width: 90%;
+}
+
+header h1 {
+    color:#FFFFFF;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.accordion {
+    background:#676767;
+    width:69%;
+    min-width: 400px;
+    display: block;
+    overflow: hidden;
+    height:200px;
+    font-size:0;
+}
+
+.tab {
+    display:inline-block;
+    background-color: #979797;
+    border-right: #929292 solid 3px;
+    width: 80px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin:0;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+    width:450px;
+}
+
+.tab:hover .social a:before {
+    margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+    margin-left: -5px;
+}
+
+.tab .content {
+    background:#FFFFFF;
+    width: 360px;
+    height:200px;
+    margin-left: 80px;
+    position: relative;
+    padding: 50px 0 0 15px;
+}
+
+.tab .content h1 {
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.tab .content p {
+    font-size:0.9rem;
+    margin-bottom:10px;
+}
+
+.social a:before,
+.social a:after {
+    transition: all 0.4s ease-in-out 0.1s;
+    width:80px;
+    height:200px;
+    position: absolute;
+    text-indent:0;
+    padding-top:90px;
+    padding-left:25px;
+    display:block;
+    font:normal 30px Genericons;
+    color:#FFFFFF;
+}
+
+.social a:after {
+    font-size:48px;
+    padding-left:20px;
+    padding-top:80px;
+    margin-left:85px;
+}
+
+/* Facebook */
+
+.facebook a:before,
+.facebook a:after {
+    content: '\f203';
+    }
+
+.facebook a:after {
+    background-color:#3B6AAE;
+}
+
+
+/* Twitter */
+
+.twitter a:before,
+.twitter a:after {
+    content: '\f202';
+    }
+
+.twitter a:after {
+    background-color:#2AA3EF;
+}
+
+
+/* YouTube */
+
+.youtube a:before,
+.youtube a:after {
+    content: '\f213';
+    }
+
+.youtube a:after {
+    background-color:#FC0D1C;
+}
+
+
+/* LinkedIn */
+
+.linkedin a:before,
+.linkedin a:after {
+    content: '\f207';
+    }
+
+.linkedin a:after {
+    background-color:#1178B3;
+}
+
+/* Github */
+
+.github a:before,
+.github a:after {
+    content: '\f200';
+    }
+
+.github a:after {
+    background-color:#000000;
+}
+
+
+
+
+
+
+
